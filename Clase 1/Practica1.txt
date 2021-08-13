@@ -1,0 +1,3 @@
+EJERCICIO 1: modificarlo para que este sea un convertidor de divisas dólares,euros,yen y bitcoin(45523.20 dólares), agregarle estilo para que sea agradable y amigable interfaz.
+
+EJERCICIO 2: modificarlo para que muestre la edad promedio de los inscriptos, cual es la edad máxima y mínima de los inscritos.agregarle estilo para que sea agradable y amigable al usuario.
