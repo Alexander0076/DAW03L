@@ -3,7 +3,7 @@ function convertir(){
     
     var num=document.getElementById('txttipo').value;
     tipo=document.getElementById('tipo').value;
-    texto ="";
+    table="";
     var d=0, e=0, y=0, b=0;
     
     switch(tipo){
@@ -33,9 +33,11 @@ function convertir(){
             break;
 
     }
-    texto +="Dolares: $"+d+"<br>";
-    texto+="Euros: Є"+e+"<br>";
-    texto+="Yen: ¥"+y+"<br>";
-    texto+="Bitcoin: ฿"+b+"<br>";
-    document.getElementById('datos').innerHTML=texto;
+    table+="<table class='table table-dark table-hover'>"
+    table+="<tr><td>Dolares</td><td>$"+d+"</td></tr>";
+    table+="<tr><td>Euros</td><td>Є"+e+"</td></tr>";
+    table+="<tr><td>Yen</td><td>¥"+y+"</td></tr>";
+    table+="<tr><td>Bitcoin</td><td>฿"+b+"</td></tr>";
+    table+="</table>";
+    document.getElementById('datos').innerHTML=table;
 }
