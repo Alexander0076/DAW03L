@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#591D1D;
+}
+.input-group-text{
+    background: #0dcaf0;
+    color: white;
+}
+#btn{
+    margin: 3% 25%;
+    padding: 1.5% 20%;
+}
+.input-group,.input-group-lg{
+    margin: 2%;
+}
+#C1{
+    left: 0;
+    padding:5.5% 3%;
+}
+#C2{
+    right: 0;
+    padding:3%;
+}
+#C1,
+#C2{
+    background: #F2F2F2;
+    margin: 0 3%;
+    border: solid 2px white;
+    border-radius: 40px;
+    width: 45%;
+    position: absolute;
+    top: 15%;
+    box-shadow:10px 5px 5px black;
+}
+@media screen and (max-width: 700px){
+   
+    #C1,
+    #C2{
+        position: relative;
+        max-width: 100%;
+        min-width: 100%;
+        margin: 10% 0;
+        padding: 10%;
+    }
+}
