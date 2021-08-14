@@ -18,7 +18,7 @@ body{
 }
 #C1{
     left: 0;
-    padding:5.5% 3%;
+    padding:8% 3%;
 }
 #C2{
     right: 0;
@@ -31,9 +31,20 @@ body{
     border: solid 2px white;
     border-radius: 40px;
     width: 45%;
+    height: 500px;
     position: absolute;
     top: 15%;
     box-shadow:10px 5px 5px black;
+}
+#C2{
+    overflow-y: scroll;
+}
+#C2::-webkit-scrollbar{
+    width: 15px;
+}
+#C2::-webkit-scrollbar-thumb{
+    background: #0dcaf0;
+    border-radius: 30px;
 }
 @media screen and (max-width: 700px){
    
