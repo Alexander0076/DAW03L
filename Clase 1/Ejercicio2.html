@@ -9,27 +9,49 @@
     <script src="js/ejercicio2.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style2.css">
+    <script src="https://kit.fontawesome.com/4091c72a8a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 
 <body>
-    <div class="container" id="C0">
-        <div class="container" id="C1">
-            <div class="input-group input-group-lg">
-                <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="txtnombre">
-              </div>
-              <div class="input-group input-group-lg">
-                <span class="input-group-text" id="inputGroup-sizing-default">edad</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="txtedad">
-              </div>
-            <input type="button"class="btn btn-outline-danger" id="btn" value="Ingresar" onclick="Matricular()">
-        </div>
-        <div class="container" id="C2" >
+    <section>
+        <div class="container">
+            <form action="">
+                <fieldset>
+                    <div class="container" id="C1">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" id="txtnombre" pattern="^[A-Za-z\s]+$" required
+                                title="Error! ingrese nombre">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text" id="inputGroup-sizing-default">edad</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" id="txtedad" pattern="^[0-9]+$" required
+                                title="Error! ingrese edad correctamente">
+                        </div>
+                        <input type="button" class="btn btn-outline-danger" id="btn" value="Ingresar"
+                            onclick="Matricular()">
+                        <input type="reset" class="btn btn-outline-warning" id="reset">
+                    </div>
+                </fieldset>
+    
+    
+            </form>
+        <div class="container" id="C2">
             <div id="info" class="h3"></div>
         </div>
-    </div>
-    
+        </div>
+    </section>
+    <footer>
+        <ul class="icon">
+            <li class="fas fa-user">  <a href="#">Alexander Ulises Elías Vásquez</a></li> 
+            <li class="fas fa-id-badge">  <a href="#">EV210855</a></li>
+            <li class="fas fa-envelope">  <a href="#">EV210855@alumno.udb.edu.sv</a></li>
+        </ul>
+        <img src="img/udb.png" alt="" id="img">
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>

@@ -8,6 +8,7 @@
     <title>conversor udb</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4091c72a8a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style1.css">
 
     <script src="js/ejercicio1.js"></script>
@@ -16,22 +17,37 @@
 <body>
     <div class="container">
         <h3 class="h3">Conversor de Moneda</h3>
-            <div class="input-group mb-2">
-                <span class="input-group-text">$</span>
-                <input type="text" id="txttipo" class="form-control"
-                    aria-label="Dollar amount (with dot and two decimal places)">
-            </div>
-            <select name="" id="tipo" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                <option value="0" disabled selected>Seleccione la moneda ingresada</option>
-                <option value="1">Dolares</option>
-                <option value="2">Euros</option>
-                <option value="3">Yen</option>
-                <option value="4">Bitcoin</option>
+        <form action="">
+            <fieldset>
+                <div class="input-group mb-2">
+                    <span class="input-group-text">$</span>
+                    <input type="text" id="txttipo" class="form-control"
+                        aria-label="Dollar amount (with dot and two decimal places)" pattern="[0-9]+$" required
+                        title="Error! ingrese una cantidad numerica">
+                </div>
+                <select name="" id="tipo" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                    required title="Seleccione una opción">
+                    <option value="0" disabled selected>Seleccione la moneda ingresada</option>
+                    <option value="1">Dolares</option>
+                    <option value="2">Euros</option>
+                    <option value="3">Yen</option>
+                    <option value="4">Bitcoin</option>
 
-            </select>
-            <input type="button" value="Divisas" class="btn btn btn-success h3" id="btn" onclick="convertir()">
-            <div id="datos" class="h3"></div>
+                </select>
+                <input type="button" value="Divisas" class="btn btn btn-success h3" id="btn" onclick="convertir()">
+                <input type="reset" class="btn btn-warning" id="reset">
+            </fieldset>
+        </form>
+        <div id="datos" class="h3"></div>
     </div>
+    <footer>
+        <ul class="icon">
+            <li class="fas fa-user">  <a href="#">Alexander Ulises Elías Vásquez</a></li> 
+            <li class="fas fa-id-badge">  <a href="#">EV210855</a></li>
+            <li class="fas fa-envelope">  <a href="#">EV210855@alumno.udb.edu.sv</a></li>
+        </ul>
+        <img src="img/udb.png" alt="" id="img">
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
